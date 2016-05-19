@@ -13,8 +13,8 @@ var Schematic = require('minecraft-schematic');
 var data = fs.readFileSync('./myawesomehouse.schematic');
 
 Schematic.loadSchematic(data, function(error, build) {
-    	if (error) throw error;
-    	build.getWidth();    // 10
+    if (error) throw error;  
+    build.getWidth();    // 10  
 	build.getLength();   // 12
 	build.getHeight();  // 8
 	build.getBlockID(0, 0, 0); // 1
